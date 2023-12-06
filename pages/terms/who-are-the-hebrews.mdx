@@ -94,9 +94,51 @@ The term Hebrew is believed to be the children of Eber, who was the great-great-
   }}
 />
 
+![Hebrew Family Tree](images/hebrewFamilyTree.png)
+
 ```mermaid
-graph LR
-Eber --> Peleg --> Reu --> Serug --> Nahor --> Terah --> Abraham
+flowchart TB
+
+Eber --> Peleg
+subgraph Hebrews
+  Peleg --> Reu
+  Reu --> Serug
+  Serug --> Nahor1[Nahor]
+  Nahor1[Nahor] --> Terah
+  Terah --> Abraham
+  Terah --> Nahor
+  Terah --> Haran
+  Haran --> Lot
+  Lot --> Moab
+  Lot --> Ben-Ammi
+  Moab --> Moabites((Moabites))
+  Ben-Ammi --> Ammonites((Ammonites))
+  Abraham --> Isaac
+  Isaac --> Esau --> Edomites((Edomites))
+  Isaac --> Jacob
+  subgraph Israelites
+    subgraph House of Israel
+      Jacob --> Ruben
+      Jacob --> Simeon
+      Jacob --> Levi
+      Jacob --> Issachar
+      Jacob --> Zebulun
+      Jacob --> Joseph
+      Jacob --> Gad
+      Jacob --> Asher
+      Jacob --> Dan
+      Jacob --> Naphtali
+      Joseph --> Ephraim
+      Joseph --> Manasseh
+    end
+    subgraph House of Judah
+      Jacob --> Judah
+      Jacob --> Benjamin
+    end
+  end
+end
+
+
 ```
 
 <Callout type="info">
