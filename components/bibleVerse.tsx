@@ -26,9 +26,10 @@ export function BibleVerse({ data }) {
           </span>
         );
       })}
-      <div className="nx-pt-4 dark:nx-text-gray-600 nx-text-gray-500">
+      <div className="nx-pt-4 dark:nx-text-gray-600 nx-text-gray-500 nx-flex nx-gap-2 nx-items-center">
         - {data.reference}{" "}
-        <span className="nx-text-xs">({data.translation_name})</span>
+        <div className="nx-text-xs">({data.translation_name})</div>{" "}
+        {/* <div className="nx-text-xs">{data.translation_note}</div> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Callout } from "nextra/components";
-import { BibleVerse } from "../../components/bibleVerse";
+import { BibleVerse } from "components/bibleVerse";
 
 # Who are the Hebrews?
 
@@ -93,7 +93,11 @@ The term Hebrew is believed to be the children of Eber, who was the great-great-
     translation_note: "Public Domain",
   }}
 />
-##
+
+```mermaid
+graph LR
+Eber --> Peleg --> Reu --> Serug --> Nahor --> Terah --> Abraham
+```
 
 <Callout type="info">
   Israelites are Hebrews, but not all Hebrews are Israelites. For example: Esau
@@ -104,8 +108,8 @@ The term Hebrew is believed to be the children of Eber, who was the great-great-
 flowchart TB
   subgraph Hebrews
     subgraph Israelites
-      israel(House of Israel)
-      judah(House of Judah / Jews)
+      israel[House of Israel]
+      judah[House of Judah / Jews]
     end
   end
 ```
