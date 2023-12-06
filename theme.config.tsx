@@ -3,6 +3,17 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 
 const config: DocsThemeConfig = {
+  head: () => {
+    return (
+      <>
+        <script
+          defer
+          data-domain="house-of-israel.org"
+          src="https://plausible.io/js/script.js"
+        ></script>
+      </>
+    );
+  },
   logo: <span>The House of Israel</span>,
   project: {
     link: "https://github.com/dane-stevens/israel",
